@@ -1,0 +1,47 @@
+@font-face { 
+    font-family: iranyekan;
+    src: url("../fonts/iranyekanwebregular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face { 
+    font-family: iranyekan;
+    src: url("../fonts/iranyekanwebbold.woff") format("woff"); 
+    font-style: normal; 
+    font-weight: bold; 
+    font-display: swap; 
+}
+body{
+    font-family: iranyekan;
+}
+#headerTop{
+    box-shadow: 0 3px 7px rgba(0, 0, 0, .3);
+}
+.navbar{
+    height: 120px !important;
+    #navbarSupportedContent {
+        justify-content: center;
+        margin: 0px;
+        font-weight: normal;
+        font-size: 20px;
+    
+        :hover{
+            color: #6eb8ff;
+        }
+    }
+}
+.dropdown{
+
+    button{
+        font-size: 20px;
+    }
+    .dropdown-menu{
+        background-color: #37383e;
+        li > a {
+            font-size: 20px;
+            font-family: iranyekan;
+        }
+    }
+}
+

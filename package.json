@@ -18,6 +18,7 @@
   "homepage": "https://github.com/tecnor-2004/namava.clone-#readme",
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "fontawesome": "^5.6.3",
     "jquery": "^3.7.1"
   }
 }
