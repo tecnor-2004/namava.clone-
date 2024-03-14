@@ -36,7 +36,7 @@ function scrollHandler(){
         .removeClass("position-fixed bg-primary")
         .addClass("position-absolute bg-transparent")
         .css({
-            "box-shadow":"none",
+            "box-shadow":"inset 0px 30px 10px -20px rgb(0, 0, 0)",
             "top":"0px"
         })
     }

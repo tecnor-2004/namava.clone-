@@ -15,5 +15,10 @@
             display:  block !important;
         }
     }
-    
+    .carousel-indicators{
+        display: flex !important;
+    }
+    .btns{
+        display: none;
+    }
 }

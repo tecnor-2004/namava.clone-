@@ -20,9 +20,9 @@ body{
     //:;
 }
 .navbar{
-    //box-shadow:inset 0px 30px 50px -20px rgb(0, 0, 0);
+    box-shadow:inset 0px 30px 10px -20px rgb(0, 0, 0);
     z-index: 9;
-    height: 120px !important;
+    height: 100px !important;
     #navbarSupportedContent {
         justify-content: center ;
         margin: 0px;
@@ -44,6 +44,81 @@ body{
             font-size: 20px;
             font-family: iranyekan;
         }
+    }
+}
+.carousel{
+    position: relative;
+    display: flex;
+    .carousel-inner{
+        .carousel-item{
+            position: relative;
+            .myShadow{
+                position: absolute;
+                z-index: 2;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                box-shadow:inset 0px 0px 600px 60px rgb(0, 0, 0);
+            }
+            .details{
+                position: absolute;
+                z-index: 3;
+                display: flex;
+                flex-direction: column;
+                right: 0px;
+                top: 50%;
+                right: 5%;
+                translate: 0 -50%;
+                width: 30%;
+                .logoName{
+                    img{
+                        width:100%;
+                    }
+                }
+                .name{
+                    color: white;
+                    margin-left: auto;
+                }
+                .actions{
+                    margin-left: auto;
+                }
+            }
+            .ekran{
+                position: absolute;
+                z-index: 3;
+                top: 60%;
+                width: 20%;
+                left: 5%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    .carousel-control-prev, 
+    .carousel-control-next{
+        position: absolute;
+        z-index: 3;
+        height: 60px;
+        width: 60px;
+        padding: 10px;
+        border-radius: 50%;
+        top: auto;
+        left: 40px;
+        bottom: 15%;
+        background-color: #37383e;
+    }
+    .carousel-control-next{
+        left: 110px;
+    }
+    .carousel-indicators{
+        button{
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        display: none;
     }
 }
 
