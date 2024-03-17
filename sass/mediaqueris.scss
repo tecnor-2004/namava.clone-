@@ -5,6 +5,9 @@
     .dropdown{
         display: block !important;
     }
+    .bottomCarousel{
+        bottom: -20%;
+    }
 }
 @media (max-width: 992px) {
     #navbarSupportedContent{
@@ -20,5 +23,59 @@
     }
     .btns{
         display: none;
+    }
+    .bottomCarousel{
+        position: relative !important;
+        .slickCarousel{
+            .slickCarouselProduct{
+                :first-child{
+                    display: none;
+                }
+                :nth-child(2){
+                    display: block;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 700px) {
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                .main-img{
+                    display: none !important;
+                }
+                .mobile-img{
+                    display: block !important;
+                }
+                .details{
+                    width: 50%;
+                    right: 25%;
+                    bottom: 50%;
+                    .name{
+                        justify-content: center;
+                        margin: 0px;
+                        p{
+                            text-align: center;
+                        }
+                    }
+                    .actions{
+                        margin: 0px auto;
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                }
+            }
+        }
+    }
+}
+@media (max-width: 420px) {
+    #navbarSupportedContent{
+        font-size: 5px !important;
+    }
+    #logo{
+        height: 30px;
+        width: 60px;
     }
 }

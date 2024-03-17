@@ -13,6 +13,7 @@ function scrollHandler(){
             "top":"-120px"
         })
         if(Position > lastPosition && lastPosition <= Position){
+            //problems with these two interfiering 
             lastPosition = Position
             console.log("scrolling down")
             navbar.css({
@@ -41,6 +42,33 @@ function scrollHandler(){
         })
     }
 }
-$(window).on("scroll", scrollHandler)
-  
+$(window).on("scroll", scrollHandler) 
+$(function(){ 
+    $('.slickCarousel').slick({
+        slidesToShow: 3.1,
+        slidesToScroll: 3,
+        infinite: false,
+        centerMode: false,
+        // problems with center mode
+        adaptiveHeight: true,
+        nextArrow: $(".slick-next"),
+        prevArrow: $(".slick-prev"),
+        responsive:[
+            {
+                breakpoint:1413,
+                settings:{
+                    slidesToShow: 2.1,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint:700,
+                settings:{
+                    slidesToShow: 1.1,
+                    slidesToScroll: 1
+                }
+            }
+        ],
+    })
+});
 
