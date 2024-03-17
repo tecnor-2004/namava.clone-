@@ -11874,7 +11874,7 @@ body {
   top: 0px;
   width: 100%;
   height: 100%;
-  box-shadow: inset 0px 0px 80px 80px rgb(0, 0, 0);
+  background-image: linear-gradient(rgba(18, 18, 18, 0) 10vw, rgb(18, 18, 18) 46.875vw), linear-gradient(to left, rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0) 50%);
 }
 .carousel .carousel-inner .carousel-item .details {
   position: absolute;
@@ -11935,46 +11935,17 @@ body {
 .bottomCarousel {
   bottom: -15%;
 }
-.bottomCarousel:hover .slick-prev {
+.bottomCarousel:hover .prev {
   background: linear-gradient(to right, rgb(0, 0, 0), rgba(18, 18, 18, 0));
 }
-.bottomCarousel:hover .slick-prev span {
+.bottomCarousel:hover .prev span {
   color: white;
 }
-.bottomCarousel:hover .slick-next {
+.bottomCarousel:hover .next {
   background: linear-gradient(to left, rgb(0, 0, 0), rgba(18, 18, 18, 0));
 }
-.bottomCarousel:hover .slick-next span {
+.bottomCarousel:hover .next span {
   color: white;
-}
-.bottomCarousel .slick-prev {
-  transition: all 1s;
-  left: 0px;
-  z-index: 4;
-  padding: 0px;
-  height: 100%;
-  width: 70px;
-  border: none;
-  background-color: transparent;
-  transition: all 1s;
-}
-.bottomCarousel .slick-prev span {
-  color: transparent;
-  font-size: 50px;
-}
-.bottomCarousel .slick-next {
-  transition: all 1s;
-  right: 0px;
-  z-index: 4;
-  padding: 0px;
-  height: 100%;
-  width: 70px;
-  border: none;
-  background-color: transparent;
-}
-.bottomCarousel .slick-next span {
-  color: transparent;
-  font-size: 50px;
 }
 .bottomCarousel .slickCarousel .slick-slide {
   margin: 10px;
@@ -11985,6 +11956,53 @@ body {
 }
 .bottomCarousel .slickCarousel .slickCarouselProduct :nth-child(2) {
   display: none;
+}
+
+#live:hover .prev {
+  background: linear-gradient(to right, rgb(0, 0, 0), rgba(18, 18, 18, 0));
+}
+#live:hover .prev span {
+  color: white;
+}
+#live:hover .next {
+  background: linear-gradient(to left, rgb(0, 0, 0), rgba(18, 18, 18, 0));
+}
+#live:hover .next span {
+  color: white;
+}
+#live .slick-list .slick-slide {
+  margin: 10px;
+}
+
+.prev {
+  transition: all 1s;
+  left: 0px;
+  z-index: 4;
+  padding: 0px;
+  height: 100%;
+  width: 70px;
+  border: none;
+  background-color: transparent;
+  transition: all 1s;
+}
+.prev span {
+  color: transparent;
+  font-size: 50px;
+}
+
+.next {
+  transition: all 1s;
+  right: 0px;
+  z-index: 4;
+  padding: 0px;
+  height: 100%;
+  width: 70px;
+  border: none;
+  background-color: transparent;
+}
+.next span {
+  color: transparent;
+  font-size: 50px;
 }
 
 @media (max-width: 1413px) {

@@ -72,3 +72,31 @@ $(function(){
     })
 });
 
+$(function(){ 
+    $('.slickCarouselLive').slick({
+        slidesToShow: 3.1,
+        slidesToScroll: 3,
+        infinite: false,
+        centerMode: false,
+        // problems with center mode
+        adaptiveHeight: true,
+        nextArrow: $(".live-next"),
+        prevArrow: $(".live-prev"),
+        responsive:[
+            {
+                breakpoint:1413,
+                settings:{
+                    slidesToShow: 2.1,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint:700,
+                settings:{
+                    slidesToShow: 1.1,
+                    slidesToScroll: 1
+                }
+            }
+        ],
+    })
+});
