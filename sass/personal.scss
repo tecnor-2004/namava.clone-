@@ -55,8 +55,8 @@ body{
                 top: 0px;
                 width: 100%;
                 height: 100%;
-                background-image: linear-gradient(rgba(18, 18, 18, 0) 10vw, rgb(18, 18, 18) 46.875vw), linear-gradient(to left, rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0) 50%);
-            }
+                //box-shadow: rgb(18, 18, 18) 0px -5px 5px inset;
+                background-image: linear-gradient(rgba(18, 18, 18, 0) 10vw, rgb(18, 18, 18) 46.875vw), linear-gradient(to left, rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0) 50%);            }
             .details{
                 position: absolute;
                 z-index: 3;

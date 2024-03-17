@@ -42,6 +42,10 @@
     .carousel{
         .carousel-inner{
             .carousel-item{
+                .myShadow{
+                    box-shadow: rgb(18, 18, 18) 0px -5px 5px inset;
+                    background-image: linear-gradient(rgba(18, 18, 18, 0) 10vw, rgb(18 18 18) 135vw);
+                }
                 .main-img{
                     display: none !important;
                 }
