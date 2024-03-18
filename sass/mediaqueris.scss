@@ -37,6 +37,14 @@
             }
         }
     }
+    #footer{
+        display: none;
+    }
+}
+@media (min-width: 992px) {
+    #movies{
+        margin-top: 15% !important;
+    }
 }
 @media (max-width: 700px) {
     .carousel{

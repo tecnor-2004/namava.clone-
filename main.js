@@ -1,3 +1,6 @@
+// problems with center mode
+//problems with these two interfiering 
+// problems with transition when slick is used 
 let navbar = $(".navbar")
 let lastPosition = 0;
 function scrollHandler(){
@@ -13,7 +16,6 @@ function scrollHandler(){
             "top":"-120px"
         })
         if(Position > lastPosition && lastPosition <= Position){
-            //problems with these two interfiering 
             lastPosition = Position
             console.log("scrolling down")
             navbar.css({
@@ -37,7 +39,7 @@ function scrollHandler(){
         .removeClass("position-fixed bg-primary")
         .addClass("position-absolute bg-transparent")
         .css({
-            "box-shadow":"inset 0px 30px 10px -20px rgb(0, 0, 0)",
+            "box-shadow":"inset 0px 50px 40px -20px rgb(0, 0, 0)",
             "top":"0px"
         })
     }
@@ -71,7 +73,6 @@ $(function(){
         ],
     })
 });
-
 $(function(){ 
     $('.slickCarouselLive').slick({
         slidesToShow: 3.1,
@@ -95,6 +96,60 @@ $(function(){
                 settings:{
                     slidesToShow: 1.1,
                     slidesToScroll: 1
+                }
+            }
+        ],
+    })
+});
+$(function(){ 
+    $('.slickCarouselMovies').slick({
+        slidesToShow: 7.1,
+        slidesToScroll: 7,
+        infinite: false,
+        centerMode: false,
+        adaptiveHeight: true,
+        nextArrow: $(".movies-next"),
+        prevArrow: $(".movies-prev"),
+        responsive:[
+            {
+                breakpoint:1413,
+                settings:{
+                    slidesToShow: 4.1,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint:700,
+                settings:{
+                    slidesToShow: 3.1,
+                    slidesToScroll: 3
+                }
+            }
+        ],
+    })
+});
+$(function(){ 
+    $('.slickCarouselMovies-2').slick({
+        slidesToShow: 7.1,
+        slidesToScroll: 7,
+        infinite: false,
+        centerMode: false,
+        adaptiveHeight: true,
+        nextArrow: $(".movies-next-2"),
+        prevArrow: $(".movies-prev-2"),
+        responsive:[
+            {
+                breakpoint:1413,
+                settings:{
+                    slidesToShow: 4.1,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint:700,
+                settings:{
+                    slidesToShow: 3.1,
+                    slidesToScroll: 3
                 }
             }
         ],
