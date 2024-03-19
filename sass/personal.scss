@@ -257,7 +257,42 @@ body{
         }
     }
 }
-
+.search{
+    margin-top: 90px;
+    .searchInput{
+        width: auto;
+        background-color: #37383e;
+        height: 90px ;
+        margin-right: 440px;
+        input{
+            background-color: #37383e;
+            &::placeholder{
+                color: $gray-600;
+                font-size: 25px;
+            }
+            &:active{
+                border: none;
+            }
+        }
+        span{
+            font-size: 35px;
+        }
+    }
+    .list-group{
+        width: 360px;
+        background-color: #37383e;
+        li{
+            background-color: #37383e;
+        }
+    }
+}
+.categorySearch{
+    border: none;
+    background-color: #cccccc;
+    &::placeholder{
+        color: black;
+    }
+}
 
 
 
